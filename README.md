@@ -12,3 +12,4 @@
 - [Lab 08](Instructions/08.md)
 - [Lab 09](Instructions/09.md)
 - [Lab 10](Instructions/10.md)
+- [Lab 11](Instructions/11.md)
