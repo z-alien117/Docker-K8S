@@ -7,15 +7,15 @@ Una startup tecnológica está creciendo rápidamente y necesita desplegar su ap
 
 1. **Volumes PVC**: Crear un PVC para la base de datos para garantizar que los datos persistan incluso si el Pod falla.
 
-2. **Secrets**: Almacenar las credenciales de la base de datos como un secreto y hacer que la API las consuma de forma segura.
+2. **Secrets**: Almacenar las credenciales de la base de datos como un secreto y hacer que la API o el pod las consuma de forma segura.
 
 3. **Services**:
    - Definir un servicio ClusterIP para la API REST interna.
-   - Establecer un servicio LoadBalancer para la interfaz de usuario web que sea accesible desde Internet.
+   - Establecer un servicio LoadBalancer para la interfaz de usuario web que sea accesible fuera del cluster.
 
 4. **ReplicaSet**: Asegurar que siempre haya un número específico de réplicas de la API REST ejecutándose para manejar la carga.
 
-5. **Deployments**: Crear un Deployment para la API REST y la interfaz de usuario para gestionar las actualizaciones y rollbacks.
+5. **Deployments**: Crear un Deployment para la API REST 
 
 6. **Namespaces**: Utilizar namespaces para separar el entorno de producción del de desarrollo.
 
