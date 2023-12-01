@@ -1,23 +1,29 @@
-### Reto Kubernetes
 
-#### Escenario:
-Una startup tecnológica está creciendo rápidamente y necesita desplegar su aplicación en un clúster de Kubernetes de forma escalable, segura y eficiente. La aplicación consta de una API REST, una base de datos y una interfaz de usuario web.
+### Reto Kubernetes: Despliegue y Acceso a APIs de Prueba
 
 #### Tareas:
 
-1. **Volumes PVC**: Crear un PVC para la base de datos para garantizar que los datos persistan incluso si el Pod falla.
+1. **Desplegar el Servidor HTTPBin**:
+   - Crea un Deployment utilizando la imagen `kennethreitz/httpbin`.
+   - Asegúrate de que el Deployment esté configurado con la etiqueta correcta.
 
-2. **Secrets**: Almacenar las credenciales de la base de datos como un secreto y hacer que la API o el pod las consuma de forma segura.
+2. **Exponer HTTPBin Internamente**:
+   - Crea un servicio ClusterIP para que los componentes internos del clúster puedan acceder a `httpbin`.
 
-3. **Services**:
-   - Definir un servicio ClusterIP para la API REST interna.
-   - Establecer un servicio LoadBalancer para la interfaz de usuario web que sea accesible fuera del cluster.
+3. **Exponer HTTPBin Externamente**:
+   - Crea un servicio LoadBalancer para que puedas hacer llamadas a `httpbin` desde fuera del clúster.
 
-4. **ReplicaSet**: Asegurar que siempre haya un número específico de réplicas de la API REST ejecutándose para manejar la carga.
+4. **Usar Volumes PVC**:
+   - Configura un volumen PVC para almacenar cualquier dato que `httpbin` pueda necesitar persistir.
 
-5. **Deployments**: Crear un Deployment para la API REST 
+5. **Configurar Secrets**:
+   - Almacena y consume cualquier configuración secreta necesaria para `httpbin` utilizando el objeto Secret de Kubernetes.
 
-6. **Namespaces**: Utilizar namespaces para separar el entorno de producción del de desarrollo.
+6. **Implementar un ReplicaSet**:
+   - Define un ReplicaSet para `httpbin` que mantenga un número deseado de réplicas.
+
+7. **Crear un Namespace Específico**:
+   - Despliega `httpbin` dentro de un namespace dedicado para este ejercicio.
 
 
 ```yaml
