@@ -13,3 +13,4 @@
 - [Lab 09](Instructions/09.md)
 - [Lab 10](Instructions/10.md)
 - [Lab 11](Instructions/11.md)
+- [Lab 12](Instructions/12.md)
