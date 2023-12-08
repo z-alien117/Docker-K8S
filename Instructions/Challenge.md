@@ -1,49 +1,12 @@
+**Aplicación Node.js**: Debes crear una aplicación CRUD en Node.js que se conecte a una base de datos MongoDB. Puedes utilizar el framework Express.js para facilitar el desarrollo de la aplicación.
 
-### Reto Kubernetes: Despliegue y Acceso a APIs de Prueba
+> **Nota** el código lo encontrarás [aqui](../Challenge/)
 
-#### Tareas:
+**Despliegue en Kubernetes**: Debes desplegar tu aplicación en un clúster de Kubernetes. Cada componente (la aplicación Node.js y la base de datos MongoDB) debe estar en su propio pod.
 
-1. **Desplegar el Servidor HTTPBin**:
-   - Crea un Deployment utilizando la imagen `kennethreitz/httpbin`.
-   - Asegúrate de que el Deployment esté configurado con la etiqueta correcta.
+**Base de datos MongoDB**: Debes desplegar MongoDB en tu clúster de Kubernetes en un pod separado. Tu aplicación Node.js debe conectarse a esta base de datos.
 
-2. **Exponer HTTPBin Internamente**:
-   - Crea un servicio ClusterIP para que los componentes internos del clúster puedan acceder a `httpbin`.
+**Persistencia de datos con PVC**: Debes configurar un Persistent Volume Claim (PVC) para tu base de datos MongoDB para asegurar la persistencia de datos. Esto significa que los datos de tu base de datos deben persistir incluso si el pod de MongoDB se elimina o se reinicia.
 
-3. **Exponer HTTPBin Externamente**:
-   - Crea un servicio LoadBalancer para que puedas hacer llamadas a `httpbin` desde fuera del clúster.
+**Acceso a través de un dominio**: Debes configurar un Ingress para que tu aplicación sea accesible a través del dominio challenge.example.com.
 
-4. **Usar Volumes PVC**:
-   - Configura un volumen PVC para almacenar cualquier dato que `httpbin` pueda necesitar persistir.
-
-5. **Configurar Secrets**:
-   - Almacena y consume cualquier configuración secreta necesaria para `httpbin` utilizando el objeto Secret de Kubernetes.
-
-6. **Implementar un ReplicaSet**:
-   - Define un ReplicaSet para `httpbin` que mantenga un número deseado de réplicas.
-
-7. **Crear un Namespace Específico**:
-   - Despliega `httpbin` dentro de un namespace dedicado para este ejercicio.
-
-
-```yaml
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: httpbin
-spec:
-  replicas: 1
-  selector:
-    matchLabels:
-      app: httpbin
-  template:
-    metadata:
-      labels:
-        app: httpbin
-    spec:
-      containers:
-      - name: httpbin
-        image: kennethreitz/httpbin
-        ports:
-        - containerPort: 80
-```
