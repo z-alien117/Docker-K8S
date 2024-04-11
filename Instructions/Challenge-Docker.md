@@ -112,6 +112,6 @@ php artisan serve --host=localhost --port=8000
 
 Este comando iniciará un servidor de desarrollo en `http://localhost:8000` (o en el puerto que especifiques).
 
-puedes reemplazar localhost por 0.0.0.0
+> puedes reemplazar localhost por 0.0.0.0
 
 ---
