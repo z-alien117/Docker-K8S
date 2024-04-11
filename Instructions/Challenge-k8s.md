@@ -1,6 +1,6 @@
 1. **Aplicación Node.js**: Debes crear una aplicación CRUD en Node.js que se conecte a una base de datos MongoDB. Puedes utilizar el framework Express.js para facilitar el desarrollo de la aplicación.
 
-> **Nota** si no tienes experiencia en NodeJs puedes usar el siguiente código -> [CRUD Basico](../Challenge/)
+> **Nota** si no tienes experiencia en NodeJs puedes usar el siguiente código -> [CRUD Basico](../Challenge-k8s/)
 
 2. **Despliegue en Kubernetes**: Debes desplegar tu aplicación en un clúster de Kubernetes. Cada componente (la aplicación Node.js y la base de datos MongoDB) debe estar en su propio pod.
 

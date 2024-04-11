@@ -6,6 +6,8 @@
 
 Tu tarea es contenerizar una aplicación Laravel que ya está funcional y que utiliza Vite para el frontend. La aplicación debe ser completamente funcional dentro de los contenedores Docker, incluyendo la conexión a una base de datos MySQL.
 
+> **Nota:** el proyecto lo encontrarás [aqui](../Challenge-Docker/)
+
 #### Requisitos:
 
 1. **Dockerfile:**
