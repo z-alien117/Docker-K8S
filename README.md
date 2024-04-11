@@ -14,4 +14,5 @@
 - [Lab 10](Instructions/10.md)
 - [Lab 11](Instructions/11.md)
 - [Lab 12](Instructions/12.md)
-- [Challenge](Instructions/Challenge.md)
+- [Docker Challenge](Instructions/Challenge-Docker.md)
+- [k8s Challenge](Instructions/Challenge-k8s.md)
