@@ -16,3 +16,8 @@
 - [Lab 12](Instructions/12.md)
 - [Docker Challenge](Instructions/Challenge-Docker.md)
 - [k8s Challenge](Instructions/Challenge-k8s.md)
+
+## Cheat sheet
+
+- [Docker cheatsheet](Cheatsheet/Docker.md)
+- [Kubernetes cheatsheet](Cheatsheet/Kubernetes.md)
