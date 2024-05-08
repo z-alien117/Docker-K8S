@@ -21,3 +21,4 @@
 
 - [Docker cheatsheet](Cheatsheet/Docker.md)
 - [Kubernetes cheatsheet](Cheatsheet/Kubernetes.md)
+- [Kubernetes On-Prem overview](Cheatsheet/Install-k8s.md)

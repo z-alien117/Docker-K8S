@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+    app:
+        build: .
+        ports:
+            - "80:80"
+        environment:
+            DB_HOST: db
+            DB_DATABASE: laravel_db
+            DB_USERNAME: root
+            DB_PASSWORD: mi_password
+        depends_on:
+          - db
+
+    db:
+        image: mysql:8.0
+        restart: always
+        environment:
+          MYSQL_ROOT_PASSWORD: mi_password
+          MYSQL_DATABASE: laravel_db
+          # MYSQL_USER: root
+          # MYSQL_PASSWORD: mi_password
+        volumes:
+          - db_data:/var/lib/mysql
+
+volumes:
+  db_data:
