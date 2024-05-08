@@ -1,16 +1,12 @@
 import './bootstrap';
-// window.$ = jQuery;
-// window.jQuery = jQuery;
-// window.helper = './helpers';
+
 
 import './helpers';
 
+// import Alpine from 'alpinejs';
+// import focus from '@alpinejs/focus';
+// window.Alpine = Alpine;
 
-// import helper from './helpers';
+// Alpine.plugin(focus);
 
-
-
-
-// import jQuery from 'jquery';
-// import openModal from '/helpers';
-// import './helpers';
+// Alpine.start();

@@ -1,5 +1,5 @@
 @isset($invoice)
-    <x-modal>
+    <x-modal-custom>
         @slot('title')
             Edit Invoice
         @endslot
@@ -111,10 +111,10 @@
         </div>
         @endslot
 
-    </x-modal>
+    </x-modal-custom>
 
 @else
-<x-modal>
+<x-modal-custom>
     @slot('title')
         Add Invoice
     @endslot
@@ -185,5 +185,5 @@
         <button class="button button-3d button-rounded button-red" id="btn_close" data-bs-dismiss="modal"><i class="icon-thumbs-down21"></i> Cancel</button>
     </div>
     @endslot
-</x-modal>
+</x-modal-custom>
 @endisset

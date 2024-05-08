@@ -1,5 +1,5 @@
 @isset($client)
-    <x-modal>
+    <x-modal-custom>
         @slot('title')
             Edit Client
         @endslot
@@ -33,10 +33,10 @@
 
             <button class="button button-3d button-rounded button-red"  data-bs-dismiss="modal"><i class="icon-thumbs-down21"></i> Cancel</button>
         @endslot
-    </x-modal>
+    </x-modal-custom>
 @endisset
 
-<x-modal>
+<x-modal-custom>
     @slot('title')
         Add Client
     @endslot
@@ -72,4 +72,4 @@
         <button class="button button-3d button-rounded button-red"  data-bs-dismiss="modal"><i class="icon-thumbs-down21"></i> Cancel</button>
     </div>
     @endslot
-</x-modal>
+</x-modal-custom>

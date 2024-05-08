@@ -14,22 +14,22 @@
 
                 <div class="header-misc">
                     <div class="d-flex my-lg-3">
-                        <a href="https://www.facebook.com/MSTECSES" class="social-icon si-small si-borderless si-facebook">
+                        <a href="#" class="social-icon si-small si-borderless si-facebook">
                             <i class="icon-facebook"></i>
                             <i class="icon-facebook"></i>
                         </a>
 
-                        <a href="https://twitter.com/MSTECS_MX" class="social-icon si-small si-borderless si-twitter">
+                        <a href="#" class="social-icon si-small si-borderless si-twitter">
                             <i class="icon-twitter"></i>
                             <i class="icon-twitter"></i>
                         </a>
 
-                        <a href="https://www.linkedin.com/in/mstecsmx/" class="social-icon si-small si-borderless si-linkedin">
+                        <a href="#" class="social-icon si-small si-borderless si-linkedin">
                             <i class="icon-linkedin"></i>
                             <i class="icon-linkedin"></i>
                         </a>
 
-                        <a href="https://github.com/z-alien117/dev-project" class="social-icon si-small si-borderless si-github">
+                        <a href="#" class="social-icon si-small si-borderless si-github">
                             <i class="icon-github"></i>
                             <i class="icon-github"></i>
                         </a>

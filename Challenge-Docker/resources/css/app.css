@@ -5,3 +5,7 @@
 @import '../Client/css/animate.css';
 @import '../Client/css/magnific-popup.css';
 @import '../Client/css/custom.css';
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

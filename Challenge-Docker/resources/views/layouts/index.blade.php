@@ -17,7 +17,7 @@
 
 	{{-- Document Title --}}
 	<meta name="csrf-token" content="{{ csrf_token() }}">
-	<title>Dev Project | MSTECS</title>
+	<title>DEMO</title>
 
 </head>
 

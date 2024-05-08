@@ -1,5 +1,5 @@
 @isset($product)
-    <x-modal>
+    <x-modal-custom>
         @slot('title')
             Edit Product
         @endslot
@@ -36,9 +36,9 @@
 
             <button class="button button-3d button-rounded button-red"  data-bs-dismiss="modal"><i class="icon-thumbs-down21"></i> Cancel</button>
         @endslot
-    </x-modal>
+    </x-modal-custom>
 @else
-<x-modal>
+<x-modal-custom>
     @slot('title')
         Add Product
     @endslot
@@ -79,5 +79,5 @@
         <button class="button button-3d button-rounded button-red"  data-bs-dismiss="modal"><i class="icon-thumbs-down21"></i> Cancel</button>
     </div>
     @endslot
-</x-modal>
+</x-modal-custom>
 @endisset
